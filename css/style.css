@@ -1,0 +1,316 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.navbar{
+    background: #0393b8;
+    padding: 10px 20px;
+    transition: padding 2s ease;
+}
+.navbar-background{
+    padding: 2px 20px;
+}
+.navbar-brand{
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    transition: all 2s;
+}
+.navbar-brand:hover{
+    background:#011b42;
+}
+.navbar-toggler{
+    outline: none;
+}
+.nav-link{
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 2s ease;
+}
+.nav-link:hover{
+    color: #f1fffa;
+    border: 3px solid #011b42;
+    transition: border 2s ease;
+}
+/*======Navbar======*/
+/*=======Hero Section==========*/
+#hero{
+    width: 100%;
+    height: 90vh;
+    background: url("../images/malik.jpg") top right;
+    background-size: cover;
+    position: relative;
+}
+#hero:before{
+    content: "";
+    background:rgba(1,17,59,0.6);
+    position: absolute;
+    bottom:0;
+    top:0;
+    left:0;
+    right: 0;
+}
+#hero .hero-container{
+    position: absolute;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+}
+#hero h1{
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    color: #fff;
+}
+#hero h2{
+    color:#fff;
+    margin-bottom: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#hero .btn-scroll{
+    transition: 0.4s;
+    color: rgba(255,255,255,0.7);
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+#hero .btn-scroll i{
+    font-size: 48px;
+}
+#hero .btn-scroll:hover{
+    color: #011b42;
+}
+@media (min-width: 1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 575px){
+    #hero h1{
+        font-size: 40px;
+    }
+    #hero h2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+/*===========end of Hero Section=======*/
+/*===About ===========*/
+.about .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: #000;
+    text-transform: uppercase;
+}
+.about .content p{
+    margin-bottom: 0;
+}
+.about .content ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.about .content ul li{
+    padding-bottom: 10px;
+}
+.about .content ul li i{
+    font-size: 20px;
+    padding-right: 2px;
+    color: #0393b8; /*#3b434a*/
+}
+.about .content .count{
+    width: 100%;
+}
+.about .content .count i{
+    display: block;
+    font-size: 36px;
+    color: #ffb727;
+    float: left;
+}
+.about .content .count span{
+    font-size: 36px;
+    line-height: 30px;
+    display: block;
+    font-weight: 700;
+    color:#000;
+    margin-left: 50px;
+}
+.about .content .count p{
+    padding: 15px 0 0 0;
+    margin: 0 0 0 50px;
+    font-size: 14px;
+    color: #5d6a75;
+}
+.about .content .count a{
+    font-weight: 400;
+    display: block;
+    margin-top: 20px;
+    color: #5d6a75;
+    font-size: 15px;
+    transition: ease-in-out 0.3s;
+}
+.about .image{
+    background: url("../images/DSC_0042.JPG") center center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+/*========End of About========*/
+/*===========Resume Section==========*/
+.resume .resume-title{
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #3b434a;
+}
+.resume .resume-des{
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #82909c;
+    position: relative;
+}
+.resume .resume-des h4{
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0393b8;
+    margin-bottom: 10px;
+}
+.resume .resume-des h5{
+    font-size:16px;
+    background: #eef0f2;
+    padding: 5px 15px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.resume .resume-des ul{
+    padding-left: 20px;
+}
+.resume .resume-des ul li{
+    padding-bottom: 10px;
+}
+.resume .resume-des:last-child{
+    padding-bottom: 0;
+}
+
+.resume .resume-des:before{
+    content:"";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top:0;
+    background: #fff;
+    border: 2px solid #82909c;
+}
+/*======End of Resume Section============*/
+.gallery{
+    background: #fff;
+}
+.btn{
+    background: #0393b8;
+    color: #fff;
+}
+.btn:hover{
+    background: #011b42;
+    color: #fff;
+}
+.img-container{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-img{
+    transition: all 1s ease-in-out;
+}
+.img-container:hover .gallery-img{
+    transform: scale(1.2);
+}
+.img-container:hover{
+    transform: translate(0,0);
+}
+/*======Contact========*/
+.contact .contact-about h3{
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.contact .social-links{
+    padding-bottom: 20px;
+}
+.contact .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    color:#0393b8;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid #0393b8;
+}
+.contact .social-links a:hover{
+    background: #0393b8;
+    color: #fff;
+}
+.contact input, .contact textarea{
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+.contact input:focus, .contact textarea:focus{
+    border-color: #0393b8;
+}
+.contact button[type="submit"]{
+    background: #0393b8;
+    border:0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 8px;
+}
+.contact button[type="submit"]:hover{
+    background: #011b42;
+}
+
+#footer{
+    background: #0393b8;
+    padding: 24px 0;
+    font-size: 14px;
+    box-shadow: 0px 0 20px 0 rgba(0,0,0,0.1);
+    color:#fff;
+}
+#footer .copyright{
+    text-align: center;
+}
+#footer .credits{
+    padding-top: 8px;
+    text-align: center;
+    font-size: 13px;
+}
