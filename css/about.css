@@ -38,7 +38,7 @@ body{
 #hero{
     width: 100%;
     height: 90vh;
-    background: url("../images/malik.jpg") top right;
+    background: url("../images/IMG-20210530-WA0015.jpg") top right;
     background-size: cover;
     position: relative;
 }
@@ -165,7 +165,7 @@ body{
     transition: ease-in-out 0.3s;
 }
 .about .image{
-    background: url("../images/DSC_0042.JPG") center center no-repeat;
+    background: url("../images/IMG-20201226-WA0000.jpg") center center no-repeat;
     background-size: cover;
     min-height: 500px;
 }
