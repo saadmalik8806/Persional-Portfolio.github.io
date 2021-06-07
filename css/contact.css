@@ -38,7 +38,7 @@ body{
 #hero{
     width: 100%;
     height: 90vh;
-    background: url("../images/IMG-20210530-WA0017.jpg") top right;
+    background: url("../images/Screenshot 2021-06-06 220322.png") top right;
     background-size: cover;
     position: relative;
 }
@@ -90,9 +90,14 @@ body{
 @media (min-width: 1024px){
     #hero{
         background-attachment: fixed;
+        background-size: cover;
     }
 }
 @media (max-width: 575px){
+      #hero{
+        background-attachment: fixed;
+        background-size: cover;
+    }
     #hero h1{
         font-size: 40px;
     }
